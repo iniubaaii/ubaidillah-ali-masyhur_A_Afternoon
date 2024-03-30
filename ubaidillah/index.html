@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en" class="font-poppins">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome CDN start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font awesome CDN end -->
+    <!-- Google Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts end -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portofolio - Ubaidillah Ali Masyhur </title>
+  </head>
+  <body
+    class="bg-image-light dark:bg-image-dark bg-center bg-cover bg-no-repeat bg-fixed"
+  >
+    <!-- Navbar part start -->
+    <nav class="py-5 lg:py-12 bg-gray-100 dark:bg-black lg:bg-transparent">
+      <div
+        class="container grid grid-cols-[auto_1fr] justify-between items-center"
+      >
+        <div>
+          <a href="#">
+            <img src="./images/1543542361Logo_MTG_Celerates-transformed.png" alt=" website logo" />
+          </a>
+        </div>
+        <div class="text-right flex items-center justify-end gap-3">
+          <span
+            class="inline-flex items-center justify-center darkmode w-10 h-10 rounded-full cursor-pointer bg-slate-100 hover:bg-primary hover:text-slate-50 text-2xl"
+          >
+            <svg
+              class="light_icon"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-3xl dark-mode-light dark:hidden"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Dark icon -->
+            <svg
+              class="dark_icon"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-2xl dark-mode-dark hidden fill-jacarta-700 group-hover:fill-white group-focus:fill-white dark:block dark:fill-white"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span
+            class="bars lg:hidden w-10 h-10 rounded-full bg-primary text-slate-50 inline-flex items-center justify-center cursor-pointer"
+          >
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- Side menu start -->
+    <div
+      class="side_menu bg-slate-50 dark:bg-mid-dark rounded-b-2xl py-6 px-4 hidden"
+    >
+      <ul class="grid grid-cols-1 gap-2">
+        <li>
+          <a
+            href="#"
+            class="block p-2 text-slate-900 rounded-md hover:text-slate-50 hover:hover_active dark:text-slate-100 active"
+          >
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block p-2 rounded-md text-slate-900 hover:text-slate-50 hover:hover_active dark:text-slate-100"
+            ><i class="fa-regular fa-file-lines"></i> Resume</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block p-2 rounded-md text-slate-900 hover:text-slate-50 hover:hover_active dark:text-slate-100"
+            >
+            <i class="fa-brands fa-hive"></i>
+            Works
+            </a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block p-2 rounded-md text-slate-900 hover:text-slate-50 hover:hover_active dark:text-slate-100"
+            >
+            <i class="fa-brands fa-blogger"></i>
+            Blogs
+            </a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block p-2 rounded-md text-slate-900 hover:text-slate-50 hover:hover_active dark:text-slate-100"
+            >
+            <i class="fa-regular fa-address-book"></i>
+            Contact
+            </a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Side menu end -->
+    <!-- Navbar part end -->
+
+    <!-- Side bar start -->
+    <main>
+      <section class="main_section mt-40">
+        <div class="container grid grid-cols-12 lg:gap-10">
+          <!-- Sidebar start -->
+          <div class="Home_info col-span-12 lg:col-span-4">
+            <div
+              class="bg-slate-100 dark:bg-[#111111] rounded-2xl mt-10 lg:mb-10 py-10 md:sticky top-40 left-0"
+            >
+              <div
+                class="overflow-hidden rounded-lg -mt-48 text-center w-60 h-60 m-auto"
+              >
+                <img src="./images/IMG-20230831-WA0001-02.jpeg" alt="Profile image" />
+              </div>
+              <div class="text-center">
+                <h2 class="mt-6 mb-1 text-4xl font-semibold dark:text-white">
+                  Ubaidillah Ali
+                </h2>
+                <h1
+                  class="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]"
+                >
+                  Ui/Ux Designer
+                </h1>
+              </div>
+              <div class="flex justify-center space-x-3">
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#1773EA] hover:text-slate-50"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#1C9CEA] hover:text-slate-50"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#e14a84] hover:text-slate-50"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#0072b1] hover:text-slate-50"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <ul
+                class="flex flex-col bg-light-gray dark:bg-mid-dark px-7 py-8 rounded-2xl mt-10"
+              >
+                <li
+                  class="flex items-center gap-6 border-b border-slate-300 py-3"
+                >
+                  <div
+                    class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-[#111111] hover:hover_active group cursor-pointer"
+                  >
+                    <i
+                      class="fa-solid fa-mobile-screen text-pink-600 text-2xl group-hover:text-slate-50"
+                    ></i>
+                  </div>
+                  <div class="flex flex-col dark:text-white">
+                    <span class="text-slate-500 text-xs font-bold">Kontak</span>
+                    <a
+                      class="transition-all duration-100 hover:text-primary"
+                      href="tel:+8801616639307"
+                      >+6285815578130</a
+                    >
+                  </div>
+                </li>
+                <li
+                  class="flex items-center gap-6 border-b border-slate-300 py-3"
+                >
+                  <div
+                    class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-black text-[#6AB5B9] hover:hover_active group cursor-pointer text-xl"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="flex flex-col dark:text-white">
+                    <span class="text-slate-500 text-xs font-bold"
+                      >Alamat</span
+                    >
+                    <span class="transition-all duration-100"
+                      >Situbondo, Jawa Timur</span
+                    >
+                  </div>
+                </li>
+                <li
+                  class="flex items-center gap-6 border-b border-slate-300 py-3"
+                >
+                  <div
+                    class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-black text-[#FD7590] hover:hover_active group cursor-pointer text-xl"
+                  >
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                  </div>
+                  <div class="flex flex-col dark:text-white">
+                    <span class="text-slate-500 text-xs font-bold">Email</span>
+                    <a
+                      class="transition-all duration-100 hover:text-primary"
+                      href="mailto:example@mail.com"
+                      >ubaidillahoke22@gmail.com</a
+                    >
+                  </div>
+                </li>
+                <li class="flex items-center gap-6 py-3">
+                  <div
+                    class="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-black text-[#C17CEB] hover:hover_active group cursor-pointer text-xl"
+                  >
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </div>
+                  <div class="flex flex-col dark:text-white">
+                    <span class="text-slate-500 text-xs font-bold"
+                      >Tanggal Lahir</span
+                    >
+                    <span class="transition-all duration-100 "
+                      >30 Desember, 2001</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Sidebar end -->
+
+          <div class="col-span-12 lg:col-span-8 rounded-2xl">
+            <!-- Menu start -->
+            <div class="text-right -mt-10 hidden lg:block">
+              <ul
+                class="md:inline-flex gap-4 py-6 px-10 rounded-3xl bg-slate-50 dark:bg-black menu"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center hover:hover_active bg-light-gray dark:bg-mid-dark dark:text-slate-100 active"
+                  >
+                    <i class="fa-solid fa-house"></i>
+                    Beranda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center bg-light-gray dark:bg-mid-dark dark:text-slate-100 hover:hover_active"
+                  >
+                    <i class="fa-regular fa-file-lines"></i>
+                    Riwayat
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center bg-light-gray dark:bg-mid-dark dark:text-slate-100 hover:hover_active"
+                  >
+                    <i class="fa-brands fa-hive"></i>
+                    Portofolio
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center bg-light-gray dark:bg-mid-dark dark:text-slate-100 hover:hover_active"
+                  >
+                    <i class="fa-brands fa-blogger"></i>
+                    Blogs
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-900 w-20 hover:text-slate-50 text-1xl py-4 rounded-xl flex items-center flex-col justify-center bg-light-gray dark:bg-mid-dark dark:text-slate-100 hover:hover_active"
+                  >
+                    <i class="fa-regular fa-address-book"></i>
+                    kontak
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Menu end -->
+
+            <!-- Home tab start -->
+            <div
+              class="tab_item bg-slate-50 dark:bg-[#111111] rounded-xl mb-14"
+            >
+              <div class="pt-16 px-12 mt-8">
+                <div>
+                  <h2
+                    class="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52"
+                  >
+                    Profil Saya
+                  </h2>
+                  <p
+                    class="text-gray-700 dark:text-slate-500 leading-7 font-medium"
+                  >
+                  Saya seorang mahasiswa Teknik Informatika yang berdedikasi dengan minat mendalam dalam teknologi, pemrograman, dan analisis data. Saya juga aktif berkontribusi dalam proyek-proyek teknologi di luar kampus. Keahlian saya terfokus pada pengembangan perangkat lunak dan mockup desain. Saya terus mencari peluang untuk belajar dan mengembangkan keterampilan teknis dan interpersonal. Dengan dedikasi ini, saya yakin akan mencapai pencapaian yang lebih besar di masa depan.
+                  </p>
+                  <p
+                    class="text-gray-700 dark:text-slate-500 leading-7 font-medium mt-3"
+                  >
+                  </p>
+
+                  <h3
+                    class="text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4"
+                  >
+                    Kemampuan
+                  </h3>
+                </div>
+                <div
+                  class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2"
+                >
+                  <div
+                    class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5"
+                  >
+                    <div>
+                      <img
+                        class="w-28"
+                        src="./images/icons/icon-12.svg"
+                        alt="icon-12"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="dark:text-white text-xl font-semibold">
+                        Ui/Ux Design
+                      </h4>
+                      <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                        saya memiliki minat dan keinginan yang kuat untuk terlibat dalam merancang pengalaman pengguna yang baik dan menarik
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5"
+                  >
+                    <div>
+                      <img
+                        class="w-28"
+                        src="./images/icons/icon-11.svg"
+                        alt="icon-11"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="dark:text-white text-xl font-semibold">
+                        Komunikasi Interpersonal
+                      </h4>
+                      <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                        Saya mungkin memiliki minat dalam mempelajari keterampilan komunikasi, seperti pendekatan yang efektif dalam berbicara, mendengarkan, dan memahami perspektif orang lain.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5"
+                  >
+                    <div>
+                      <img
+                        class="w-28"
+                        src="./images/icons/icon-7.svg"
+                        alt="icon-3"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="dark:text-white text-xl font-semibold">
+                        Data Analyst
+                      </h4>
+                      <p class="leading-8 text-gray-lite dark:text-[#5185D4]">
+                        Saya tertarik untuk mempelajari dan menguasai berbagai teknik analisis data, termasuk pengolahan data, statistik, visualisasi data.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5"
+                  >
+                    <div>
+                      <img
+                        class="w-28"
+                        src="./images/icons/icon-8.svg"
+                        alt="icon-4"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="dark:text-white text-xl font-semibold">
+                        Front End
+                      </h4>
+                      <p class="leading-8 text-gray-lite dark:text-[#7B7B7B]">
+                        Saya yakin bahwa menjadi seorang Front End developer akan memberikan Saya kesempatan untuk mengeksplorasi kreativitas Saya sambil membangun karier yang memuaskan dan bermanfaat.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5"
+                  >
+                    <div>
+                      <img
+                        class="w-28"
+                        src="./images/icons/icon-10.svg"
+                        alt="icon-10"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="dark:text-white text-xl font-semibold">
+                        Manajemen Waktu
+                      </h4>
+                      <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                        Dengan demikian, membagi waktu adalah keterampilan yang sangat penting untuk dikuasai karena membantu Saya mengelola hidup Saya dengan lebih efektif.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5"
+                  >
+                    <div>
+                      <img
+                        class="w-28"
+                        src="./images/icons/icon-9.svg"
+                        alt="icon-9"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="dark:text-white text-xl font-semibold">
+                        Web Development
+                      </h4>
+                      <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                        Saya siap untuk terus belajar dan mengikuti perkembangan teknologi web yang terus berubah.menciptakan pengalaman pengguna yang memuaskan dan memenuhi kebutuhan pengguna akhir
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    class="text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4"
+                  >
+                    My Client!
+                  </h3>
+                  <div class="brand_slider py-6 px-6 rounded-xl dark:bg-black">
+                    <div class="slide_item py-4 px-8 rounded-md">
+                      <img src="./images/slide-item-8.png" alt="image" />
+                    </div>
+                    <div class="slide_item py-4 px-8 rounded-md">
+                      <img src="./images/slide-item-5.png" alt="image" />
+                    </div>
+                    <div class="slide_item py-4 px-8 rounded-md">
+                      <img src="./images/slide-item-6.png" alt="image" />
+                    </div>
+                    <div class="slide_item py-4 px-8 rounded-md">
+                      <img src="./images/slide-item-7.svg" alt="image" />
+                    </div>
+                    <div class="slide_item py-4 px-8 rounded-md">
+                      <img src="./images/slide-item-5.png" alt="image" />
+                    </div>
+                    <div class="slide_item py-4 px-8 rounded-md">
+                      <img src="./images/slide-item-6.png" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl"
+              >
+                <p class="text-slate-800 dark:text-slate-50">
+                  &#169; <span id="year"></span> All Rights Reserved by
+                  ib-themes.
+                </p>
+              </div>
+            </div>
+            <!-- Home tab end ---->
+
+            <!-- Riwayat tab start -->
+            <div
+              class="tab_item hidden bg-slate-50 dark:bg-[#111111] rounded-xl mb-14"
+            >
+              <div class="pt-16 px-12 mt-8">
+                <div>
+                  <h2
+                    class="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52"
+                  >
+                    Riwayat
+                  </h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <!-- Left side -->
+                  <div>
+                    <h3 class="text-3xl dark:text-white font-medium pb-6">
+                      Pendidikan
+                    </h3>
+                    <div class="grid grid-cols-1 gap-6">
+                      <div
+                        class="bg-yellow-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
+                      >
+                        <span class="text-sm text-slate-400">2017-2020</span>
+                        <h4
+                          class="text-xl font-medium text-slate-800 dark:text-slate-100"
+                        >
+                          IPA
+                        </h4>
+                        <p
+                          class="text-base font-normal text-slate-700 dark:text-slate-200"
+                        >
+                          MA Negeri 2 Situbondo
+                        </p>
+                      </div>
+                      <div
+                        class="bg-rose-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
+                      >
+                        <span class="text-sm text-slate-400"
+                          >2021 - Sekarang</span
+                        >
+                        <h4
+                          class="text-xl font-medium text-slate-800 dark:text-slate-100"
+                        >
+                          Teknik Informatika
+                        </h4>
+                        <p
+                          class="text-base font-normal text-slate-700 dark:text-slate-200"
+                        >
+                          Politeknik Negeri Jember
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Right side -->
+                  <div>
+                    <h3 class="text-3xl dark:text-white font-medium pb-6">
+                      Pengalaman Project
+                    </h3>
+                    <div class="grid grid-cols-1 gap-6">
+                      <div
+                        class="bg-cyan-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
+                      >
+                        <span class="text-sm text-slate-400">Feb 2022 - Jun 2022</span>
+                        <h4
+                          class="text-xl font-medium text-slate-800 dark:text-slate-100"
+                        >
+                        Aplikasi Sistem Kasir Pemesanan Krupuk
+                        </h4>
+                        <p
+                          class="text-base font-normal text-slate-700 dark:text-slate-200"
+                        >
+                        Merancang untuk  membantu admin terhadap segala dokumen, data serta segala hal administratif yang berkepentingan dengan pihak klient.
+                        </p>
+                      </div>
+                      <div
+                        class="bg-pink-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
+                      >
+                        <span class="text-sm text-slate-400">Feb 2023 - Mei 2023</span>
+                        <h4
+                          class="text-xl font-medium text-slate-800 dark:text-slate-100"
+                        >
+                        Sistem Perangkat Pengaduan Balai Desa Demung - Besuki
+                        </h4>
+                        <p
+                          class="text-base font-normal text-slate-700 dark:text-slate-200"
+                        >
+                        Bertanggung Jawab Merancang Aplikasi terhadap segala dokumen, data serta segala hal administratif yang berkepentingan dengan klient.
+                        </p>
+                      </div>
+                      <div
+                        class="bg-green-50 dark:bg-mid-dark py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
+                      >
+                        <span class="text-sm text-slate-400">Sep 2023 - Nov 2023</span>
+                        <h4
+                          class="text-xl font-medium text-slate-800 dark:text-slate-100"
+                        >
+                        Tempat Sampah Otomatis Dan Indikator Kapasitas Arduino UNO
+                        </h4>
+                        <p
+                          class="text-base font-normal text-slate-700 dark:text-slate-200"
+                        >
+                        berkontribusi dalam rancangan menguji sensor dengan baik untuk mengatasi problem solving.                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skills start -->
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4 lg:pt-12"
+                >
+                  <div>
+                    <h3 class="text-3xl dark:text-white font-medium pb-8">
+                      Keahlian
+                    </h3>
+                    <div class="pb-8">
+                      <p
+                        class="text-slate-500 pb-1 flex justify-between items-center text-base dark:texl-slate-100"
+                      >
+                        <span>Web Design</span>
+                        <span>80%</span>
+                      </p>
+                      <div
+                        class="w-full h-[3px] bg-slate-300 rounded relative after:contents-[] after:w-[80%] after:h-full after:bg-red-400 after:absolute after:top-0 after:left-0 after:rounded"
+                      ></div>
+                    </div>
+                    <div class="pb-8">
+                      <p
+                        class="text-slate-500 pb-1 flex justify-between items-center text-base dark:texl-slate-100"
+                      >
+                        <span>Mobile App</span>
+                        <span>66%</span>
+                      </p>
+                      <div
+                      class="w-full h-[3px] bg-slate-300 rounded relative after:contents-[] after:w-[66%] after:h-full after:bg-cyan-500 after:absolute after:top-0 after:left-0 after:rounded"
+                      ></div>
+                    </div>
+                    <div class="pb-8">
+                      <p
+                        class="text-slate-500 pb-1 flex justify-between items-center text-base dark:texl-slate-100"
+                      >
+                        <span>Illustrator</span>
+                        <span>66%</span>
+                      </p>
+                      <div
+                        class="w-full h-[3px] bg-slate-300 rounded relative after:contents-[] after:w-[66%] after:h-full after:bg-cyan-500 after:absolute after:top-0 after:left-0 after:rounded"
+                      ></div>
+                    </div>
+                    <div class="pb-8">
+                      <p
+                        class="text-slate-500 pb-1 flex justify-between items-center text-base dark:texl-slate-100"
+                      >
+                        <span>Photoshop</span>
+                        <span>75%</span>
+                      </p>
+                      <div
+                        class="w-full h-[3px] bg-slate-300 rounded relative after:contents-[] after:w-[75%] after:h-full after:bg-purple-400 after:absolute after:top-0 after:left-0 after:rounded"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="text-3xl dark:text-white font-medium pb-8">
+                      bahasa pemrograman
+                    </h3>
+                    <div class="flex flex-wrap gap-4">
+                      <button
+                        class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300"
+                      >
+                        Javascript
+                      </button>
+                      <button
+                        class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300"
+                      >
+                      Python
+                      </button>
+                      <button
+                        class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300"
+                      >
+                      PHP
+                      </button>
+                      <button
+                        class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300"
+                      >
+                      Kotlin
+                      </button>
+                      <button
+                        class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300"
+                      >
+                      Dart
+                      </button>
+                      <button
+                        class="text-base rounded-md py-1 px-3 bg-slate-200 text-slate-700 dark:bg-slate-900 dark:text-slate-300"
+                      >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Skills end -->
+              </div>
+              <div
+                class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl"
+              >
+                <p class="text-slate-800 dark:text-slate-50">
+                  &#169; <span id="year"></span> All Rights Reserved by
+                  ib-themes.
+                </p>
+              </div>
+            </div>
+            <!-- Resume tab end ---->
+
+            <!-- Work tab start -->
+            <div
+              class="tab_item hidden bg-slate-50 dark:bg-[#111111] rounded-xl mb-14"
+            >
+              <div class="pt-16 px-12 mt-8">
+                <div>
+                  <h2
+                    class="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52"
+                  >
+                    Portofolio
+                  </h2>
+                    <img src="./images/Thumbnail (1).png" alt="image" />
+                    <img src="./images/Group 7140.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl"
+              >
+              </div>
+            </div>
+            <!-- Work tab end ---->
+              </div>
+              <div
+                class="dark:bg-black p-6 text-center mt-8 rounded-br-xl rounded-bl-xl"
+              >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Side bar end -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
